@@ -7,6 +7,7 @@
     <title>Geometry Genius</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/fad4bef4b7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -21,8 +22,121 @@
             </div>
           </div>
     </header>
+
+    <!-- Geometry & Calculation  -->
     <main>
-        
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+            <div class="Geometry w-[70%] bg-red-700 mt-5 grid md:grid-cols-3 lg:grid-cols-3 gap-6">
+                <div class="card w-full bg-secondary mt-5">
+                    <figure class="px-10 pt-10">
+                      <img src="images/triangle.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area (A) =<span>0.5</span> <i class="fa-solid fa-xmark"></i> <span>b</span> <i class="fa-solid fa-xmark">
+                      </i> <span>h</span></p>
+                      <div class="flex gap-2">
+                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
+                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
+                      </div>
+                      <div class="button">
+                        <button class="btn btn-info w-60">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-200 mt-5">
+                    <figure class="px-10 pt-10">
+                      <img src="images/rectangle.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = <span>w</span> <i class="fa-solid fa-xmark">
+                      </i> <span>l</span></p>
+                      <div class="flex gap-2">
+                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
+                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
+                      </div>
+                      <div class="button">
+                        <button class="btn btn-info w-60">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-200 mt-5">
+                    <figure class="px-10 pt-10">
+                      <img src="images/parallelogram.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A) =<span>b</span> <i class="fa-solid fa-xmark">
+                      </i> <span>h</span></p>
+                      <p> b= <span>10</span> cm,h= <span>12</span> cm</p>
+                      <div class="flex gap-2">
+                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
+                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
+                      </div>
+                      <div class="button">
+                        <button class="btn btn-info w-60">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-info mt-5">
+                    <figure class="px-10 pt-10">
+                      <img src="images/rhombus.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rhombus</h2>
+                      <p>Area (A) =<span>0.5</span> <i class="fa-solid fa-xmark"></i> <span>d1</span> <i class="fa-solid fa-xmark">
+                      </i> <span>d2</span></p>
+                      <p> d1= <span>16</span> cm,d2= <span>8</span> cm</p>
+                      <div class="flex gap-2">
+                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
+                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
+                      </div>
+                      <div class="button">
+                        <button class="btn btn-info w-60">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-200 mt-5">
+                    <figure class="px-10 pt-10">
+                      <img src="images/pentagon.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Pentagon</h2>
+                      <p>Area (A) =<span>0.5</span> <i class="fa-solid fa-xmark"></i> <span>p</span> <i class="fa-solid fa-xmark">
+                      </i> <span>b</span></p>
+                      <p> p= <span>6</span> cm,b= <span>10</span> cm</p>
+                      <div class="flex gap-2">
+                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
+                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
+                      </div>
+                      <div class="button">
+                        <button class="btn btn-info w-60">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-200 mt-5">
+                    <figure class="px-10 pt-10">
+                      <img src="images/ellipse.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Ellipse</h2>
+                      <p>Area (A) =<span>&pi</span> <span>a</span> <span>b</span></p>
+                      <p> a= <span>10</span> cm,b= <span>4</span> cm</p>
+                      <div class="flex gap-2">
+                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
+                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
+                      </div>
+                      <div class="button">
+                        <button class="btn btn-info w-60">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Calculation w-[25%] mx-auto">
+             <h2 class="text-3xl text-center font-bold underline">Area Caculation</h2>
+            </div>
+        </section>
     </main>
     <script src="js/javascript.js"></script>
 </body>

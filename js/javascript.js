@@ -112,3 +112,20 @@ document.getElementById('btn-ellipse').addEventListener('click',function(){
 
     displayOutputData("Ellipse", totalNewValue);
 })
+
+//  background random color
+  function cardRandomColor(){
+    let color = [];
+    for (let i = 0; i < 4; i++){
+        color.push(Math.floor(Math.random() * 255));
+    }
+    return 'rgb(' + color.join(',') + ')';
+  }
+  
+  document.addEventListener("mouseover", function(){
+    document.body.style.backgroundColor = cardRandomColor();
+  });
+
+document.getElementById('card-bg').addEventListener('mouseover',event =>{
+    event.target.style.fill = cardRandomColor();
+})

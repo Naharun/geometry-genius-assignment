@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/fad4bef4b7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Navbar -->
     <header>
         <div class="navbar bg-cyan-50 lg:px-12 lg:px-12">
-                <div class="navbar-start block">
-                    <p class="normal-case text-3xl">Interactive</p>
-                    <p class="normal-case text-xl">Geometry Genius</p>
-                </div>
-            <div class="navbar-end ">
-              <a class="btn btn-active btn-primary px-8 hover:bg-slate-300">Blog</a>
+            <div class="navbar-start block">
+                <p class="normal-case text-3xl">Interactive</p>
+                <p class="normal-case text-xl">Geometry Genius</p>
             </div>
-          </div>
+            <div class="navbar-end ">
+                <button id="btn-blog" class="btn btn-active btn-primary px-8 hover:bg-slate-300">Blog</button>
+            </div>
+        </div>
     </header>
 
     <!-- Geometry & Calculation  -->
@@ -29,115 +31,153 @@
             <div class="Geometry w-[70%] y-36 mt-5 grid md:grid-cols-3 lg:grid-cols-3 gap-6">
                 <div class="card w-full bg-secondary mt-5">
                     <figure class="px-10 pt-10">
-                      <img src="images/triangle.png" alt="" class="rounded-xl" />
+                        <img src="images/triangle.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Triangle</h2>
-                      <p>Area (A) =<span>0.5</span> <i class="fa-solid fa-xmark"></i> <span>b</span> <i class="fa-solid fa-xmark">
-                      </i> <span>h</span></p>
-                      <div class="flex gap-2">
-                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
-                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
-                      </div>
-                      <div class="button">
-                        <button class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
-                      </div>
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) =<span>0.5</span> <i class="fa-solid fa-xmark"></i> <span>b</span> <i
+                                class="fa-solid fa-xmark">
+                            </i> <span>h</span></p>
+                        <div class="flex gap-2">
+                            <input id="triangle-base-input" class="w-20 rounded ml-2" type="" placeholder="b">
+                            <p>cm</p>
+                            <input id="triangle-height-input" class="w-20 rounded" type="" placeholder="h">
+                            <p>cm</p>
+                        </div>
+                        <div class="button">
+                            <button id="btn-triangle" class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
+                        </div>
                     </div>
                 </div>
                 <div class="card w-full bg-base-200 mt-5">
                     <figure class="px-10 pt-10">
-                      <img src="images/rectangle.png" alt="" class="rounded-xl" />
+                        <img src="images/rectangle.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rectangle</h2>
-                      <p>Area (A) = <span>w</span> <i class="fa-solid fa-xmark">
-                      </i> <span>l</span></p>
-                      <div class="flex gap-2">
-                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
-                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
-                      </div>
-                      <div class="button">
-                        <button class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
-                      </div>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = <span>w</span> <i class="fa-solid fa-xmark">
+                            </i> <span>l</span></p>
+                        <div class="flex gap-2">
+                            <input id="rectangle-base-input" class="w-20 rounded ml-2" type="" placeholder="b">
+                            <p>cm</p>
+                            <input id="rectangle-height-input" class="w-20 rounded" type="" placeholder="h">
+                            <p>cm</p>
+                        </div>
+                        <div class="button">
+                            <button id="btn-rectangle" class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
+                        </div>
                     </div>
                 </div>
                 <div class="card w-full bg-base-200 mt-5">
                     <figure class="px-10 pt-10">
-                      <img src="images/parallelogram.png" alt="" class="rounded-xl" />
+                        <img src="images/parallelogram.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Parallelogram</h2>
-                      <p>Area (A) =<span>b</span> <i class="fa-solid fa-xmark">
-                      </i> <span>h</span></p>
-                      <p> b= <span>10</span> cm,h= <span>12</span> cm</p>
-                      <div class="flex gap-2">
-                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
-                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
-                      </div>
-                      <div class="button">
-                        <button class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
-                      </div>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) =<span>b</span> <i class="fa-solid fa-xmark">
+                            </i> <span>h</span></p>
+                        <p> b= <span>10</span> cm,h= <span>12</span> cm</p>
+                        <div class="flex gap-2">
+                            <input id="parallelogram-base-input" class="w-20 rounded ml-2" type="" placeholder="b">
+                            <p>cm</p>
+                            <input id="parallelogram-height-input" class="w-20 rounded" type="" placeholder="h">
+                            <p>cm</p>
+                        </div>
+                        <div class="button">
+                            <button id="btn-parallelogram" class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
+                        </div>
                     </div>
                 </div>
                 <div class="card w-full bg-sky-200 mt-5">
                     <figure class="px-10 pt-10">
-                      <img src="images/rhombus.png" alt="" class="rounded-xl" />
+                        <img src="images/rhombus.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rhombus</h2>
-                      <p>Area (A) =<span>0.5</span> <i class="fa-solid fa-xmark"></i> <span>d1</span> <i class="fa-solid fa-xmark">
-                      </i> <span>d2</span></p>
-                      <p> d1= <span>16</span> cm,d2= <span>8</span> cm</p>
-                      <div class="flex gap-2">
-                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
-                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
-                      </div>
-                      <div class="button">
-                        <button class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
-                      </div>
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) =<span>0.5</span> <i class="fa-solid fa-xmark"></i> <span>d<sub>1</sub></span> <i
+                                class="fa-solid fa-xmark">
+                            </i> <span>d<sub>2</sub></span></p>
+                        <p> d<sub>1</sub>= <span>16</span> cm,d<sub>2</sub>= <span>8</span> cm</p>
+                        <div class="flex gap-2">
+                            <input id="rhombus-base-input" class="w-20 rounded ml-2" type="" placeholder="b">
+                            <p>cm</p>
+                            <input id="rhombus-height-input" class="w-20 rounded" type="" placeholder="h">
+                            <p>cm</p>
+                        </div>
+                        <div class="button">
+                            <button id="btn-rhombus" class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
+                        </div>
                     </div>
                 </div>
                 <div class="card w-full bg-base-200 mt-5">
                     <figure class="px-10 pt-10">
-                      <img src="images/pentagon.png" alt="" class="rounded-xl" />
+                        <img src="images/pentagon.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Pentagon</h2>
-                      <p>Area (A) =<span>0.5</span> <i class="fa-solid fa-xmark"></i> <span>p</span> <i class="fa-solid fa-xmark">
-                      </i> <span>b</span></p>
-                      <p> p= <span>6</span> cm,b= <span>10</span> cm</p>
-                      <div class="flex gap-2">
-                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
-                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
-                      </div>
-                      <div class="button">
-                        <button class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
-                      </div>
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) =<span>0.5</span> <i class="fa-solid fa-xmark"></i> <span>p</span> <i
+                                class="fa-solid fa-xmark">
+                            </i> <span>b</span></p>
+                        <p> p= <span>6</span> cm,b= <span>10</span> cm</p>
+                        <div class="flex gap-2">
+                            <input id="pentagon-base-input" class="w-20 rounded ml-2" type="" placeholder="b">
+                            <p>cm</p>
+                            <input id="pentagon-height-input" class="w-20 rounded" type="" placeholder="h">
+                            <p>cm</p>
+                        </div>
+                        <div class="button">
+                            <button id="btn-pentagon" class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
+                        </div>
                     </div>
                 </div>
                 <div class="card w-full bg-base-200 mt-5">
                     <figure class="px-10 pt-10">
-                      <img src="images/ellipse.png" alt="" class="rounded-xl" />
+                        <img src="images/ellipse.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Ellipse</h2>
-                      <p>Area (A) =<span>&pi</span> <span>a</span> <span>b</span></p>
-                      <p> a= <span>10</span> cm,b= <span>4</span> cm</p>
-                      <div class="flex gap-2">
-                        <input class="w-20 rounded ml-2" type="" placeholder="b"><p>cm</p>
-                        <input class="w-20 rounded" type="" placeholder="h"><p>cm</p>
-                      </div>
-                      <div class="button">
-                        <button class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
-                      </div>
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) =<span>&pi;</span> <span>a</span> <span>b</span></p>
+                        <p> a= <span>10</span> cm,b= <span>4</span> cm</p>
+                        <div class="flex gap-2">
+                            <input id="ellipse-base-input" class="w-20 rounded ml-2" type="" placeholder="b">
+                            <p>cm</p>
+                            <input id="ellipse-height-input" class="w-20 rounded" type="" placeholder="h">
+                            <p>cm</p>
+                        </div>
+                        <div class="button">
+                            <button id="btn-ellipse" class="btn btn-info  hover:bg-slate-300 w-60">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="Calculation w-[25%] mx-auto">
-             <h2 class="text-3xl text-center font-bold underline">Area Caculation</h2>
+            <div class="area-calculation w-[100%] lg:w-[25%] mx-auto rounded-xl mt-12 lg:mt-1">
+                <h1 class="text-3xl font-bold text-center underline mb-8">Area Calculation</h1>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Result</th>
+                                <th>Convert Button</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
+                            <!-- row 1 -->
+                            <!-- <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality Control Specialist</td>
+                          <td>Blue</td>
+                        </tr> -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
     </main>
     <script src="js/javascript.js"></script>
 </body>
+
 </html>

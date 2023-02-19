@@ -29,7 +29,7 @@ document.getElementById('btn-blog').addEventListener('click', function(){
 document.getElementById('btn-triangle').addEventListener('click',function(){
     const triangleBaseOutput = getInputValueById('triangle-base-input');
     const triangleHeightOutput = getInputValueById('triangle-height-input');
-    const totalNewOutput = (0.5 * triangleBaseOutput * triangleHeightOutput);
+    const totalNewOutput = (0.5 * triangleBaseOutput * triangleHeightOutput).toFixed(2);
 
     
     if(isNaN(triangleBaseOutput) || isNaN(triangleHeightOutput) || triangleBaseOutput < 0 || triangleHeightOutput < 0){
@@ -46,7 +46,7 @@ document.getElementById('btn-triangle').addEventListener('click',function(){
 document.getElementById('btn-rectangle').addEventListener('click',function(){
     const rectangleBaseOutput = getInputValueById('rectangle-base-input');
     const rectangleHeightOutput = getInputValueById('rectangle-height-input');
-    const totalNewValue = (rectangleBaseOutput * rectangleHeightOutput);
+    const totalNewValue = (rectangleBaseOutput * rectangleHeightOutput).toFixed(2);
 
     if(isNaN(rectangleBaseOutput) || isNaN(rectangleHeightOutput) || rectangleBaseOutput < 0 || rectangleHeightOutput < 0){
         alert('Please type valid number');
@@ -60,7 +60,7 @@ document.getElementById('btn-rectangle').addEventListener('click',function(){
 document.getElementById('btn-parallelogram').addEventListener('click',function(){
     const parallelogramBaseOutput = getInputValueById('parallelogram-base-input');
     const parallelogramHeightOutput = getInputValueById('parallelogram-height-input');
-    const totalNewValue = (parallelogramBaseOutput * parallelogramHeightOutput);
+    const totalNewValue = (parallelogramBaseOutput * parallelogramHeightOutput).toFixed(2);
 
     if(isNaN(parallelogramBaseOutput) || isNaN(parallelogramHeightOutput) || parallelogramBaseOutput < 0 || parallelogramHeightOutput < 0){
         alert('Please type valid number');
@@ -74,7 +74,7 @@ document.getElementById('btn-parallelogram').addEventListener('click',function()
 document.getElementById('btn-rhombus').addEventListener('click',function(){
     const rhombusBaseOutput = getInputValueById('rhombus-base-input');
     const rhombusHeightOutput = getInputValueById('rhombus-height-input');
-    const totalNewValue = (0.5 * rhombusBaseOutput * rhombusHeightOutput);
+    const totalNewValue = (0.5 * rhombusBaseOutput * rhombusHeightOutput).toFixed(2);
 
     if(isNaN(rhombusBaseOutput) || isNaN(rhombusHeightOutput) || rhombusBaseOutput < 0 || rhombusHeightOutput < 0){
         alert('Please type valid number');
@@ -88,7 +88,7 @@ document.getElementById('btn-rhombus').addEventListener('click',function(){
 document.getElementById('btn-pentagon').addEventListener('click',function(){
     const pentagonBaseOutput = getInputValueById('pentagon-base-input');
     const pentagonHeightOutput = getInputValueById('pentagon-height-input');
-    const totalNewValue = (0.5 * pentagonBaseOutput * pentagonHeightOutput);
+    const totalNewValue = (0.5 * pentagonBaseOutput * pentagonHeightOutput).toFixed(2);
 
     if(isNaN(pentagonBaseOutput) || isNaN(pentagonHeightOutput) || pentagonBaseOutput < 0 || pentagonHeightOutput < 0){
         alert('Please type valid number');
@@ -103,7 +103,7 @@ document.getElementById('btn-pentagon').addEventListener('click',function(){
 document.getElementById('btn-ellipse').addEventListener('click',function(){
     const ellipseBaseOutput = getInputValueById('ellipse-base-input');
     const ellipseHeightOutput = getInputValueById('ellipse-height-input');
-    const totalNewValue = (3.14 * ellipseBaseOutput * ellipseHeightOutput);
+    const totalNewValue = (3.14 * ellipseBaseOutput * ellipseHeightOutput).toFixed(2);
 
     if(isNaN(ellipseBaseOutput) || isNaN(ellipseHeightOutput) || ellipseBaseOutput < 0 || ellipseHeightOutput < 0){
         alert('Please type valid number');
